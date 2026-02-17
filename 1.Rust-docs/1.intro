@@ -6,3 +6,12 @@ i) Performance:                   Ye C++ jitni tez hai kyunki isme koi Garbage C
 ii) Safety:                       Ye "Memory Leaks" aur "Crashes" ko compile time par hi rok deti hai.
 iii) Concurrency:                 Multiple tasks ko ek saath bina kisi "Data Race" ke handle karti hai.
 
+2. rustupe                      = rustup are the one cli tool,jo ki bht hi important h, 
+
+simple uses                     = rustup
+for update                      = update rustup
+for uninstall                   = rustup self uninstall
+for open the rust docs          = rustup docs
+
+
+3. rust me apke pass phle hi error aa jyenge compile k time hi.
