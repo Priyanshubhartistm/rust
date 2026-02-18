@@ -1,0 +1,98 @@
+ 1.  use std::io;                                  user input lene k liye y hm ise external library k use krte h.
+
+use      = keyward h 
+std      = ek standard libary h.jisme se io libary niklt h.
+io;      = input,output libary ko scope m leke ati h
+
+
+
+ab ham apne io ko ek scope m le ayenge to 
+
+** rust by default, 
+
+let's say ham ne 
+string::new();           = ek string banya or
+let a:string             = isko ek varibleas m assign kr diya.
+
+i) isme hamne kahi p v string ko import ni kiya h. but fir main yha p string ko use kr pa rhi hu,bcz oo "preload" m include h.
+it means jab v hmra program run/bnta h to kch set of library automatically upload ho jati h,inko "preload" khte h.
+
+bht sare chize hamre standard library m avilable h, agr hm hr chiz ko import krne lage to ek chota s helllo world program bane k liye hm bht sari chize import krni padegi or hmra jo code h, oo bht jda messy ho jayega.
+
+ii) but ager oo sbkch hi avilable kr de global scope m to v good ni h, q kki bloat ho jayega(bht jda hi bhara-bhara s),coz hm waise v bht sari chize use ni krte h.
+
+iii) to enhone ek hybrid approch lagyi or kha ki "preload" jaisi pattern di.
+
+to hamne ek string k use kiya to oo apne aap preload ho jayega. coz oo hr rust program k andr avilable hoga.
+
+** but y jo "io" package h,oo preload m ni h,
+
+to isko ham explicit scope m leke ana pdta h, 
+to ise trh se ham isko scope m late h.
+
+
+
+2. rust m jitne v variables hote h, n oo by default immutable hote h, means usko ham change ni kr skte h.
+io::std().read_line(buf:&mut guess)
+
+i) jab app guess read line ko de rhe ho to app usko, ek mutable referance ni de rhe ho.
+let k andr to mut kr diya apne but ise re_line ko ek trh ki premission ni di ki tu v isko mutable kr le.
+
+guess k ek refernce (&) dena h, read_line ko or hame batna h,ki tmhre pass, let mut guess wale ;variables k referance to h, 
+
+and tm n ek mutable referance le lo or ab n tm ise guess k andr kch v changes kr skte ho, 
+
+example:- hm read_line ko bol rhe h, mere pass ek guess variables h, tm isko le lo or y h,iska referance(buf:&)
+and tm iska ek mutable refernce le lo
+
+- means u are allowed to muted this variable 
+- if muted variable ni h, to kaise bana h, oo v pata h. mut krk
+
+ii) guess jo v input leta h,oo mere guess k andr append krke de deta h.
+or by default mera string empty h, so working
+
+
+
+3. let mut guess: String = String::new();
+i) string         = string is a string type provide by the standard libary, that is growable means ap iske andr or string add kr skte ho.
+
+ii) ::new();      = ::new line indicate that new is an associated function of the string type.
+mtlb ki jo string type h,  hmre pass uske andr ek function h, new
+to string k upr ek new function implemented h,
+
+string k andr hmre pass ek new function h,jo ki return kr rha h,new string
+
+
+
+4. io::std().read_line(buf:&mut guess)       = iske 2 varient cases h, result ke 
+i) ok                   = The ok, varient means the operation was successfly and inside ok is the  successfly generated value.
+- agr ham user se input le paye to bs guess m append kro or aage badho.
+- if by chance y line(4no. wala) fail hua to, "failed to send user input" console p print krega.
+
+
+ii) err                 =  The Err, varient means the operation failed, and err contains information about how or why the operation failed.
+
+
+- agr y line user se input collect kr pati h, to y hame bolegi ok, 
+- But agr isko input collect krne mkoye v dikkat ati h, to y hame error return krega.
+
+read_line , hame result return krti h.
+- to ab hame handle krn chahiye ki agr result hmra result "ok" ata h, to ky krn h, or "error" to ky krn chahiye.
+- but ham n result k upr ek function call kr skte h, "expect" or iske andr hm ek mes dal skte h.
+.expect(mes: "failed to read user input");
+
+to y jo . expect function ky krega, basically ham ky kh rhe h, ki mere ko n handle hi ni kena h,mere ko kch v explictly means ok k alwa koye v error ko handle hi ni krn h.
+
+- mai yah p optimactics hu,ki y line kavi yaha p fail hogi hi ni,
+- but agr y jo particular line(io::std().read_line(buf:&mut guess) ) h, y result return kr rhi h, agr kvi fail hoti h, 
+- to console p y particular chize print kro or "failed to read user input" or pura k pura program crash kr do.
+
+To hamne bs ave err ko suppress means daba diye ave k liye.
+
+
+
+5. println!("You guessed: {guess}");
+- but apko kch yasa print krn h, jo evaluations s bana hua h.for example hmre pass age h, to ham kch yasa ker skte h.
+- to use case m hm ek empty braces use kr skte h, or hmra jo evaluations means jisko calculate krn h, usko hm bhar rakh skte h.
+
+i) println!("my age is {}", age + 10);

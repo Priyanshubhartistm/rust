@@ -1,0 +1,9 @@
+use rand::Rng;             = this is a trat
+
+ab isko scope m lana hoga,
+
+hmko pata kaise chalega ki, isko use rand::Rng;  import krn h, 
+
+- you know cargo m bht unique features h, hm guessing_game k andr ek command chalyenge jo ki h, cargo doc --open
+- isme jo v hm project k andr libraries use kr rhe h, n un sb ka documents y le ayaga. meri hi local machine p jo ki without internet v chalega.
+- isko pta kaise laga yaha rand h,to hamne apne cargo.toml m rand install kiya tha. 

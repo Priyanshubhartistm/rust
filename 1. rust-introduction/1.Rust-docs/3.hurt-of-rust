@@ -1,0 +1,8 @@
+1. Ownership: Har value ka ek owner hota hai.
+
+2. Move: Jab aap value kisi aur ko dete ho, toh purana owner use bhul jata hai.
+
+3. Borrowing: Aap value udhaar de sakte ho (&), lekin do tarike se:
+
+Kitne bhi log read kar sakte hain.
+Lekin sirf ek insaan hi write (mutate) kar sakta hai ek waqt par.

@@ -1,0 +1,5 @@
+PROS                                                              CONS
+1. Speed: Extremely fast (Zero-cost abstractions).	           Learning Curve: Shuruat mein thodi mushkil lagti hai.
+2. Safety: Memory errors khtm ho jate hain.	                   Compile Time: Code compile hone mein thoda waqt leta hai.
+3. Community: Bahut helpful aur growing community hai.	       Strictness: Compiler har choti galti par tokta hai.
+

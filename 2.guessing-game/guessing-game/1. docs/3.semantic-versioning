@@ -1,0 +1,12 @@
+sementic versioning                  = basically 3 types
+
+ike:- rand = "0.8.5"
+
+i) MAJOR                 = 0  , ISME se 1 ho jaye to iske andr kch breaking changes h,
+ii) MINOR                = 8  , ISME apne koye functionality changes kiya, aap isko upgrade kr lo,isme new upgrade aya
+iii) PATCH               = 5  , ISME , koye bug tha to isko fix kr diya to isko , upgrade krna important h.
+
+- to 0.10.6 ho to upgraade krenge but 1.10.5 ho to ni krenge coz, yha chance h,ki hmra code break krega to hm upgraade ni krenge.
+
+its also called semver.
+

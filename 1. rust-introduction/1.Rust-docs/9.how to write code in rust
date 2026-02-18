@@ -1,0 +1,44 @@
+How to write code in rust
+
+fn main() {
+    println!("hello);
+}
+
+
+1. fn main()                            = Rust always run main function
+main function m hi hamesa rust run hoga h, ise main fun. ke andr me aap koye v function likh skte h,but bahr ni
+
+2. {}                                   =  y wrapper h,jiske andr hm apni body ko wrap krenge.
+
+3. curly braces {}                      = always top p hi rakho,rust k apna style or standard libraries h, y jo hme always follow up krna chhaiye.
+
+4.println!                              = 4 types k rules h,jisko follow krna chahiye.
+
+i) 1st  ...                             =  rust style is to indent with four spaces, not a tab(means println se phle 3 indent khli h)
+ii) 2nd !                               = this is called rust "macro" jo println! k sath hota h.
+iii) 3rd                                = you use "hello world" string . we pass the string as an argument to println, and the string is printed to the screen.
+iv) 4th ;                               = most lines of rust code end with a semicolon.which indicates tha this expression is over and the next one is ready to begin.
+
+5. rust.fmt                             = y hmre code k format ko thik kr deta h, just like prettier.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+We can create a project using cargo new.
+We can build a project using cargo build.
+We can build and run a project in one step using cargo run.
+We can build a project without producing a binary to check for errors using cargo check.
+Instead of saving the result of the build in the same directory as our code, Cargo stores it in the target/debug directory.

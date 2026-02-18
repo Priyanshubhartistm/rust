@@ -1,0 +1,17 @@
+1. What is rust =                         rust is programming lang.rust give us a cli(that's mean command line interface)tool.
+Rust ek Systems Programming Language hai. Iska matlab ye C aur C++ ki category mein aati hai. Ise Mozilla ne develop kiya tha taaki software fast bhi ho aur safe bhi.
+
+Iske teen bade pillar hain:
+i) Performance:                   Ye C++ jitni tez hai kyunki isme koi Garbage Collector nahi hota.
+ii) Safety:                       Ye "Memory Leaks" aur "Crashes" ko compile time par hi rok deti hai.
+iii) Concurrency:                 Multiple tasks ko ek saath bina kisi "Data Race" ke handle karti hai.
+
+2. rustupe                      = rustup are the one cli tool,jo ki bht hi important h, 
+
+simple uses                     = rustup
+for update                      = update rustup
+for uninstall                   = rustup self uninstall
+for open the rust docs          = rustup docs
+
+
+3. rust me apke pass phle hi error aa jyenge compile k time hi.

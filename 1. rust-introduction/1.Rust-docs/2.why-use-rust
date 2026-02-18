@@ -1,0 +1,8 @@
+why we  use rust:- 
+
+Aapne suna hoga ki software aksar "Memory Error" ki wajah se crash hote hain. Rust isi problem ko jad se khatam karti hai.
+
+1. No Garbage Collector (GC):                   Java ya Python mein ek piche se "safai wala" (GC) chalta hai jo memory saaf karta hai, isse speed thodi kam ho jati hai. Rust mein memory manage karne ka tarika alag hai (Ownership), isliye ye super-fast hai.
+2. Borrow Checker:                              Rust ka compiler ek sakht teacher jaisa hai. Agar aapne memory ke saath koi ched-chaad ki, toh code compile hi nahi hoga.
+3. Modern Tooling:                              Cargo (iska package manager) duniya ke sabse best tools mein se ek mana jata hai. Dependencies handle karna aur build karna bahut easy hai.
+
