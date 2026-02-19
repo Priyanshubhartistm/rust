@@ -1,0 +1,25 @@
+some things u always rembaber in const rust
+
+1. not use mut keyword
+2. without define type u cant use const
+like:- const PI: u8 = 10;
+
+3. const use in any scope, including the global scope. aap isko sbse upper v use kr skte h, but let ko ni.
+- To const ko aap kise v scope m bana skte ho.
+- but let hmesa hi local scope m function k andr or kise scope m bnta h.
+
+4. and apka code kafi bada h, or oo PI k upar relie krta h, to oo use kr skta h.
+- br br apko pi ki value declear ni krni padegi.
+
+5. always write const name in upper cases , like:- MY_NAME: string = "priya";
+
+6. const m hame compile time p hi value pata lag jati h, means value phle se fixed hoti h.
+example:- jaise pi ki value, and 
+const THREE_HOURS_IN_SEC: U32 = 60*60*3
+
+- THATS MEANS HM YHA P KOYE V YASI VALUE NI DAL SKTE H, JO CHANGE HO JAYE To
+- Const ki value v hmesa const hi honi chahiye.
+- not use non-const value
+
+7. kch v dynamic v n ho.
+
