@@ -1,0 +1,31 @@
+// 1. DATA TYPE     = Every value in Rust is of a certain data type, which tells Rust what kind of data is being specified so that it knows how to work with that data.
+> Rust is a statically typed language,
+ which means that it must know the types of all variables at compile time. 
+
+ - in rust data type, compile time m hi pata hona chahiye ki aap variable m ky daloge. 
+ means kis trh ki value compiler ko pta hona chahiye 
+
+ > means jab aap compile krte ho usi time p
+ let a: i32 = 55;
+
+ > lets see agr ham ek variable bante h, a nm ki but isme hm koye value hi assign ni ki 
+let a;
+
+> not like that ab a k value kch v likhne p oo changes ni hoga.
+a = 10; 
+a = 20;
+
+2. We’ll look at two data type subsets: scalar and compound.
+i) scalar 
+ii) compound
+
+i) scalar                          = A scalar type represents a single value.
+Rust has four primary scalar types: i
+ntegers, 
+floating-point numbers, 
+Booleans, and 
+characters.
+
+
+
+ii) compound                       = 
