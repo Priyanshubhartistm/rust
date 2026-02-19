@@ -1,0 +1,34 @@
+1. a data ko hr br jruri ni h,ki hm data k type hi define kre. y khud infar kr lega type ko
+
+aapko har value mtlb i32 likhne jrurt ni h, aap assign v kr do yase to o khud hi infar kr lega.type ko means i32
+
+let a: = 10;
+let a: i32 = 10;
+
+2. how to annotation in data type
+
+ In cases when many types are possible, 
+ such as when we converted a String to a numeric type using parse
+ we must add a type annotation, like this: u32;
+
+let guess: u32 = "42".parse().expect("Not a number!");
+
+3. .parse()
+ dekho parse aap ek String ko kaphi chizo m kr skte ho.
+i) number
+ii) u32
+iii) integer
+iv) string
+
+- to yha pr bht sare types possible the to yha p hmne u32 ko explicitly annoteate krn pada.
+
+
+let guess: u32 = "42".parse().expect("Not a number!");
+- bcz yh p ap 42 ko parse kr rhe ho to yha p apko 32 ko annoteate krn hoga.
+   
+4. If we don’t add the : u32 type annotation shown in the preceding code, 
+Rust will display the following error, which means the compiler needs more information from us to know which type we want to use:
+
+yh p pta hi ni ki kis type m parse karu , to waha p ;jha p apko lgt h,ki multiple chize possible h.
+- jha p apko lgt h,ki compiler confused ho skta h, to wha p apko type annoteate krna padega, bcz compiler confused hoga ni to
+
