@@ -1,0 +1,23 @@
+1. keyword
+
+The Rust language has a set of keywords that are reserved for use by the language only, much as in other languages.
+
+kise v language k andr kch reserved keyword hote h, jiska use ham code ko bane k liye ni kr skte h.variables and function banane k liye use ni kr skte h.
+like :- fn
+
+2. in rust variables are immutable.coz some reasons it is safe.
+example:- if u create a variable
+
+let age: i23 = 24;
+
+and million of lines
+
+then println!("me age is {age});
+
+i) agr hm koye program likh rahe h,ki agr default koye variable banya h, to sure uski value changes ni hogi.
+ii) bcz rust k andr cuncurrency means multiple thread h, to uske andr aap y value ko share krte ho. let age: i23 = 24;
+- To its very easy to manage it,
+
+** To by default immutable rakhne se bht sare advantages milte h, bht sare bugs h, jo hmre resolve ho skte h.
+
+3. in rust always 
