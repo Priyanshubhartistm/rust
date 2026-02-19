@@ -1,0 +1,18 @@
+1.tuples                = fixed lenght, bad me ap usko expand ni kr skte ho ek br jo size mil gya , so mil gya.
+> isme ek singal variables 3 values ko store krta h.
+> or different - different data types ko store krta h, at a time means ek variables m.
+
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+
+ii) tuples ko access k krne k 2 tarika hota h:-
+
+a) destrucuture 
+
+b) println!("0th value is {}", priya.0);
+
+
+ii) The tuple without any values has a special name, unit. 
+- jab hm ek khali tuple bnte h, to usko bolte h, "unit"
+
+This value and its corresponding type are both written () and represent an empty value or an empty return type. 
+Expressions implicitly return the unit value if they don’t return any other value.

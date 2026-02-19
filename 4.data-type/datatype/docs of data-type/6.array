@@ -1,0 +1,23 @@
+1. arrays               = Another way to have a collection of multiple values is with an array. Unlike a tuple, 
+every element of an array must have the same type. 
+- array m sabhi element k data type same hona chahiya, jaise sb int m hi.
+
+Unlike arrays in some other languages, arrays in Rust have a fixed length.
+- or lenght v fixed hoti h.
+
+example :- let a = [1, 2, 3, 4, 5];
+- iska size 5 isme aap grow or srink ni kr skte ho.
+
+2.  arrays are more useful when you know the number of elements will not need to change. 
+For example, if you were using the names of the month in a program, 
+you would probably use an array rather than a vector because you know it will always contain 12 elements:
+
+3. write an array’s type using square brackets with the type of each element, a semicolon, and then the number of elements in the array, like so:
+let a: [i32; 6] = [1,2,3,4,5,6];
+    println!("value is {}" , a[0]);
+
+4. Another way to write array in Rust 
+let a = [3; 5];
+
+output:- 
+let a = [3, 3, 3, 3, 3]; but in a more concise way.

@@ -1,0 +1,80 @@
+A scalar type represents a single value. 
+
+- Rust has four primary scalar types: 
+1. integers,(numeric)                      = signed and Unsigned
+2. floating-point numbers,                 = only signed
+3. Booleans,                               = 
+4. and characters.
+
+1. integer                         = An integer is a number without a fractional component.
+integer k andr fraction means points ni hote h.
+let a: i32= 10.5                   = invaild ho jayega.
+
+let a = 10.5                       = yha p hamne type annotation ko hata diye h, to automatic infar kr lega f64, or valid ho jayega.
+
+- but age type aap dete ho means annotation krte ho to u will see an error
+
+- to integer k andr points ni hote h.
+
+i) Signed  integer                   = i means Signed integer. agr number neg. or pos. h, to Signed.
+ii) unSigned integer                 = u means unSigned integer , agr number sirf pos. number h, to Unsigned.
+
+Length	              Signed(+,-)	Unsigned(+)
+
+8-bit	                 i8	              u8
+16-bit	                 i16	          u16
+32-bit	                 i32	          u32
+64-bit	                 i64	          u64
+128-bit	                 i128	          u128
+Architecture-dependent	 isize	          usize
+
+i) Signed  integer 
+Each signed variant can store numbers from −(2n − 1) to 2n − 1 − 1 inclusive, 
+where n is the number of bits that variant uses. So, an i8 can store numbers from −(27) to 27 − 1, which equals −128 to 127.
+
+** Note that number literals that can be multiple numeric types allow a type suffix, such as 57u8, to designate the type. 
+Number literals can also use _ as a visual separator to make the number easier to read, such as 1_000, which will have the same value as if you had specified 1000.
+
+Table Integer Literals in Rust
+
+Number literals	               Example
+Decimal	                       98_222
+Hex	                           0xff
+Octal	                       0o77
+Binary	                       0b1111_0000
+Byte (u8 only)	                b'A'
+
+let a: u8 = 254_u8;                 = yh p underscore dalne se value ni badlegi ,still will be same.
+isko read krne ma bht eassy hoga. ab bcz hmne yha p underscore dalke seprate kr diya h.
+
+1. integer overflow               = mtlb aap n uski range se bhar ja rhe ho, to rust m compile krte time hi pkd lega.
+rust overflow krta h, or compile hi ni hone deta h.
+
+
+
+2. floating-point numbers          = Rust’s floating-point types are f32 and f64, 
+> which are 32 bits and 64 bits in size, respectively. 
+> The default type is f64 because on modern CPUs, it’s roughly the same speed as f32 but is capable of more precision. 
+> All floating-point types are signed.
+
+example :- f64 type or f32 type dono k precisions points different h. f64 k f32 se jda h.
+
+let my_f64 = 2.123456789;
+let my_f32: f32= 2.123456789;
+
+
+3. Booleans                       = only store tru/false value.
+
+Booleans are one byte in size. 
+The main way to use Boolean values is through conditionals, such as an if expression. 
+
+
+4. characters                      = only use single characters like a , b and single quote '' , also emoji v valid h,bcz y utf
+
+Rust’s char type is the language’s most primitive alphabetic type. 
+
+> Rust’s char type is 4 bytes in size 
+and represents a Unicode scalar value, 
+which means it can represent a lot more than just ASCII. 
+
+> Accented letters; Chinese, Japanese, and Korean characters; emojis; and zero-width spaces are all valid char values in Rust.
