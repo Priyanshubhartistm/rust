@@ -1,0 +1,8 @@
+shadowing          = you can declare a new variable with the same name as a previous variable.
+> Rustaceans say that the first variable is shadowed by the second,
+
+isme hm jis variables ke aage mut laga dete h, oo shadow ho jata h.or 2nd wale k value print ho jata h.
+- q ki compiler ko kavi 1st wale let ki value kvi dikhegi hi ni.islya oo print ni hoga,means 2nd n 1 ko overshadow kr diya.
+
+
+like:- 
