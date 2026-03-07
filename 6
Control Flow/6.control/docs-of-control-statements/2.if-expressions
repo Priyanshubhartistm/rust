@@ -7,4 +7,15 @@ An if expression allows you to branch your code depending on conditions.
 
 
 IMPORTANT :-
-1. Equals to checks ni hoga , if yaha p number ki value 5 hoti n, to 
+1. Equals to checks ni hoga , if yaha p number ki value 5 hoti n, to y true value ni hoti.
+> Bcz 5 are not less then 5, 5 are equal to 5 thats why.
+
+2 . Blocks of code associated with the conditions in if expressions are sometimes called arms
+> In rust termnology if k bad jo {} , ise arms khte h.
+
+3. Optionally, we can also include an else expression, 
+which we chose to do here, to give the program an alternative block of code to execute should the condition evaluate to false. 
+If you don’t provide an else expression and the condition is false, the program will just skip the if block and move on to the next bit of code.
+
+> else dena optionally h,jruri ni, agr doge to oo tb chalega jab if ni chala hai, agar else ni v diya to completely fine.
+
