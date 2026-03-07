@@ -1,8 +1,10 @@
 1. if expression
 An if expression allows you to branch your code depending on conditions. 
-You provide a condition and then state, “If this condition is met, run this block of code. 
-If the condition is not met, do not run this block of code.”
 
-2. if expression 
+> if                  = You provide a condition and then state, “If this condition is met, run this block of code. 
+> else                = If the condition is not met, do not run this block of code.”
 
 
+
+IMPORTANT :-
+1. Equals to checks ni hoga , if yaha p number ki value 5 hoti n, to 
