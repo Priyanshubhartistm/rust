@@ -3,3 +3,8 @@ Ownership is a set of rules that govern how a Rust program manages memory. All p
 The ownership system is based on three rules:
 1. Each value in Rust has a variable that’s called its owner.
 2. There can only be one owner at a time.
+
+
+Because ownership is a new concept for many programmers, it does take some time to get used to. 
+The good news is that the more experienced you become with Rust and the rules of the ownership system, 
+the easier you’ll find it to naturally develop code that is safe and efficient. Keep at it!
