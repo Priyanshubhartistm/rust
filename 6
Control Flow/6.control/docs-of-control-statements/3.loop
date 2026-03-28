@@ -1,0 +1,12 @@
+1. Loop = means forever chalne wala jb tk usko rokenge ni tb tk chalta hi rhega.
+
+println!("value of number is {num}");
+y hmeasa hi no. ko print krte hi rhega same.
+
+num = num + 1;
+isliya isko hm + 1 kr denge taki y no. change kr de.
+
+if num == 10{
+    break;
+}
+- taki jaisae hi no. print hoke 10 p aye to break means ruk jaye.
