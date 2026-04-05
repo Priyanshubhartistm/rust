@@ -8,4 +8,4 @@ When the owner goes out of scope, the value will be dropped.
 
 When you understand ownership, you’ll have a solid foundation for understanding the features that make Rust unique.
 
-ownership 
+ownership = 
